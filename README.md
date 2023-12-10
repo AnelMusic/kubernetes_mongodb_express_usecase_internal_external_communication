@@ -1,7 +1,7 @@
 ## Simple k8s setup
 Demonstrates MongoDB and Mongo Express deployments utilizing LoadBalancer and ClusterIP services. Internal pod interaction via ClusterIP and external access to MongoDB provided through a user-friendly interface via LoadBalancer. Convenience scripts are added.
 
-![Cluster](https://github.com/AnelMusic/kubernetes_mongodb_express_usecase_internal_external_communication/assets/32487291/c5b59417-51de-4369-a09b-44e5e85f235e)
+![kubernetes_diagram](https://github.com/AnelMusic/kubernetes_mongodb_express_usecase_internal_external_communication/assets/32487291/342e9327-d133-48aa-b61a-2d212554b907)
 
 The project involves the setup of a MongoExpress application serving as a fundamental Admin UI, facilitating interaction with a MongoDB database within a Kubernetes cluster. Here are the key details:
 

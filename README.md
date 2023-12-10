@@ -5,11 +5,11 @@ Minikube-powered Kubernetes cluster setup showcasing internal and external pod c
 ## Directory structure
 ```bash
 configmaps/
-├── mongodb-configmap.yaml                    
+└── mongodb-configmap.yaml                    
 
 deployments/
 ├── mongodb
-├── mongoexpress.yaml
+└── mongoexpress.yaml
 
 secrets/
 mongodb-secret.yaml

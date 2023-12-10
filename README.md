@@ -12,7 +12,7 @@ deployments/
 └── mongoexpress.yaml
 
 secrets/
-mongodb-secret.yaml
+└──mongodb-secret.yaml
 
 .env
 apply_k8s_components.bat

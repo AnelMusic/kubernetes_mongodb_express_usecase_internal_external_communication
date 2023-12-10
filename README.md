@@ -63,5 +63,7 @@ MONGODB_ROOT_USERPASSWORD=$YOUR_USER_NAME e.g password
 run.bat
 ```
 
+#### Note: Make sure minikube is running + that on windows powershell is executed in admin mode
+
 
 

@@ -45,3 +45,23 @@ apply_k8s_components.bat
 run.bat
 set_secrets.bat
 ```
+
+## Basic Workflows
+
+#### 1. Fork project.
+(https://github.com/AnelMusic/kubernetes_mongodb_express_usecase_internal_external_communication/fork)
+
+#### 2. Create .env file with the following content:
+```bash
+MONGODB_ROOT_USERNAME=$YOUR_USER_NAME e.g username
+MONGODB_ROOT_USERPASSWORD=$YOUR_USER_NAME e.g password
+```
+#### 3. Run convenienec script:
+> This will extract your username and password from .env file, base64 encode them and into mongodb-secret.yaml.
+> Then it will apply secrets and configmaps as well as deployments in the right order using kubectl
+```bash
+run.bat
+```
+
+
+

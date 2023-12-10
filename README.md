@@ -9,14 +9,8 @@ The project involves the setup of a MongoExpress application serving as a fundam
   - Functions as a basic Admin UI interface to manage the MongoDB database.
   - Connects internally to the MongoDB database within the cluster.
   - Exposes port 8081 internally via the `mongo-express-service` to enable communication within the cluster.
-
-- **Services**:
-  - **mongo-express-service**:
-    - Allows internal communication within the Kubernetes cluster for the MongoExpress Pod via the standard port 8081.
-  - **LoadBalancer Service (External)**:
-    - Exposes a LoadBalancer Service with nodePort 30000 to facilitate external communication from outside the Kubernetes cluster.
-    - Enables access to the MongoExpress UI externally, allowing users outside the cluster to interact with the MongoExpress Pod through port 30000.
-
+  - Exposes nodePort 3000 externally via the `mongo-express-service` (LoadBlancer).
+    
 - **MongoDB Pod**:
   - Interacts with the MongoExpress Pod using the `mongodb-service`.
   - Communication occurs via the standard MongoDB port 27017.
